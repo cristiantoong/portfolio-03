@@ -22,6 +22,7 @@
   /* ---------------------- Header -------------------------- */
   #header {
     padding: 40px 0;
+    min-height: 80vh;
   }
   
   nav {
@@ -56,30 +57,58 @@
     font-size: 40px;
     margin-bottom: 20px;
   }
-/* ----------------------- Portfoilo --------------------- */
+/* ----------------------- Portfolio --------------------- */
 
   #portfolio {
-    background: #f2f3f4;
     background: #F0F0F0;
     padding: 50px;
+    min-height: 80vh;
   }
 
   .portfolios {
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
+    transition: all 0.5s;
+    height: 100%;
   }
 
-  .portfolios .portfolio-01 {
+  .project-01 {
+    width: 460px;
+    height: 100%; 
+  }
+
+  .project-02 {
+    width: 460px;
+    height: 100%; 
+  }
+ .portfolio-img {
+    overflow: hidden;
+    width: 460px;
+    height: 320px; 
+  } 
+  .portfolios .portfolio-img .portfolio-01 {
     background: url(../img/shevi.PNG) center/cover no-repeat;
-    width: 450px;
-    height: 320px;  
+    transition: all .5s ease-in-out;
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;  
   }
 
-  .portfolios .portfolio-02 {
+  .portfolios .portfolio-img .portfolio-02 {
     background: url(../img/lucien2.PNG) center/cover no-repeat;
-    width: 450px;
-    height: 320px;
+    transition: all .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;  
   }
   .project-01 .portfolio-01-desc {
     color: #898989;
@@ -104,3 +133,28 @@
   .portfolio-01-desc p, .portfolio-02-desc p {
     padding-top: 8px;
   }
+
+  .portfolios .portfolio-01:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+    filter: none;
+      -webkit-filter: grayscale(0);
+  }
+
+  .portfolios .portfolio-02:hover {
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+    filter: none;
+      -webkit-filter: grayscale(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
