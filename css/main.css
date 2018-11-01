@@ -32,7 +32,6 @@
   
   nav .nav-menu a{
     margin-right: 50px;
-    /* font-size: 18px; */
     transition: all .3s ease-in-out;
   }
 
@@ -82,7 +81,6 @@
   }
   
   .main-header .hero-title {
-    /* padding-top: 180px; */
     padding-bottom: 60px;
     width: 70%;
     position: absolute;
