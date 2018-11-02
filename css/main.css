@@ -19,6 +19,10 @@
     width: 960px;
     margin: 0 auto;
   } 
+
+  i {
+    color: #fff;
+  }
   /* ---------------------- Header -------------------------- */
   #header {
     padding: 40px 0;
@@ -76,22 +80,25 @@
   }
 
   .main-header {
+    width: 1300px;
+    margin: 0 auto;
     position: relative;
     min-height: 69vh;
   }
   
   .main-header .hero-title {
     padding-bottom: 60px;
-    width: 70%;
+    width: 50%;
     position: absolute;
     top: 37%;
-
+    left: 13%;
   }
 
   .main-header .hero-title h1 {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 45px;
     margin-bottom: 20px;
+    letter-spacing: 3px;
   }
 /* ----------------------- Portfolio --------------------- */
 
@@ -100,6 +107,22 @@
     padding: 50px;
     min-height: 63vh;
     margin-top: -40px;
+    position: relative;
+  }
+
+  #portfolio .section-title {
+    -webkit-transform: rotate(-90deg);
+    text-transform: uppercase;
+    position: absolute;
+    top: 41%;
+    left: 13%;
+  }
+  
+  #portfolio .portfolio-title h2{
+    font-size: 20px;
+    color: #606163;
+    font-weight: 400;
+    letter-spacing: 3px;
   }
 
   .portfolios {
@@ -169,6 +192,13 @@
 
   .portfolio-01-desc p, .portfolio-02-desc p {
     padding-top: 8px;
+    letter-spacing: .5px;
+  }
+  .portfolio-01-desc a, .portfolio-02-desc a {
+    display: inline-block;
+    padding-top: 8px;
+    letter-spacing: .5px;
+    font-weight: 600;
   }
 
   .portfolios .portfolio-01:hover {
@@ -190,7 +220,23 @@
 #about {
   background-image: linear-gradient(to right, #5a5a5a, #5a5a5a, #5a5a5a, #595959, #595959);
   min-height: 80vh;
-  padding-top: 100px; 
+  padding-top: 120px; 
+  position: relative;
+}
+#about .about-title {
+  -webkit-transform: rotate(-90deg);
+  text-transform: uppercase;
+  position: absolute;
+  top: 46%;
+  left: 14%;
+}
+
+
+#about .about-title h2{
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 3px;
 }
 
 .about-01 {
@@ -201,7 +247,38 @@
 .about-desc {
   flex: 0 0 400px;
 }
+.about-desc h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.about-desc p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #CBCBCB;
+  padding-top: 5px;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  line-height: 1.7;
+}
 
+.about-desc .about-skills {
+  padding-top: 20px;
+}
+
+.about-desc .about-resume {
+  padding-top: 20px;
+}
+
+.about-desc .about-resume .resume-link {
+  color: #fff;
+  font-weight: 500;
+}
+
+.about-desc .underline {
+  background: #fff;
+  height: 4px;
+  width: 50px;
+  margin: 10px 0;
+}
 
 .about-me .about-01 .about-img {
   background: url(../img/profile-pic.PNG) center/cover no-repeat;
@@ -217,9 +294,8 @@
 .about-me {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
-
-
 }
 
 .about-me .about-img:hover {
@@ -238,7 +314,91 @@
 
 #contact {
   background: #201F20;
-  min-height: 50vh; 
+  min-height: 40vh;
+ 
+}
+
+#contact .inner-contact {
+
+}
+
+#contact .inner-contact .contact-email{
+  width: 42%;
+  color: #fff;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+#contact .inner-contact .contact-email h1{
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#contact .inner-contact .contact-email p {
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  line-height: 1.7;
+}
+
+.contact-para1 {
+  padding-top: 20px;
+}
+
+.contact-para2 {
+  padding-top: 20px;
+}
+
+.email-link {
+  display: inline-block;
+  color: #964A22;
+  padding-top: 10px;
+}
+
+.main-contact {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #595959;
+  padding: 20px 0;
+}
+
+.main-contact .left-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #fff;
+  font-size: 13px;
+
+}
+
+.main-contact .socials ul {
+  list-style: none;
+  display: flex;
+  padding-top: 15px;
+}
+
+.main-contact .socials ul li {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.logo-contact {
+  padding: 10px 15px;
+}
+.logo-contact h1{
+  font-size: 25px;
+  color: #fff;
 }
 
 
