@@ -3,14 +3,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body {
     font-family: 'Open Sans', sans-serif;
     color: #343434;
     line-height: 1.5;
-    overflow-x: hidden;
   }
-  
+
   a {
     text-decoration: none;
     color: #343434;
@@ -26,6 +25,7 @@
   }
   /* ---------------------- Header -------------------------- */
   #header {
+    width: 100%;
     padding: 40px 0;
     min-height: 67vh;
   }
@@ -74,14 +74,16 @@
   .logo {
     background: black;
     padding: 10px 15px;
+    margin-left: 50px;
   }
+
   .logo h1{
     font-size: 25px;
     color: #fff;
   }
 
   .main-header {
-    width: 1300px;
+    width: 80%;
     margin: 0 auto;
     position: relative;
     min-height: 69vh;
@@ -92,7 +94,7 @@
     width: 50%;
     position: absolute;
     top: 37%;
-    left: 13%;
+    left: 17%;
   }
 
   .main-header .hero-title h1 {
@@ -173,6 +175,7 @@
     position: absolute;
     top: 41%;
     left: 13%;
+    width: 200px;
   }
   
   #portfolio .portfolio-title h2{
@@ -279,6 +282,7 @@
   min-height: 80vh;
   padding-top: 120px; 
   position: relative;
+  width: 100%;
 }
 #about .about-title {
   -webkit-transform: rotate(-90deg);
@@ -286,6 +290,7 @@
   position: absolute;
   top: 46%;
   left: 14%;
+  width: 200px;
 }
 
 
@@ -368,7 +373,8 @@
 #contact {
   background: #201F20;
   min-height: 40vh;
- 
+  margin-top: -1px;
+  width: 100%;
 }
 
 #contact .inner-contact {
@@ -450,13 +456,7 @@
 
 
 @media screen and (max-width: 960px) {
-  .container {
-    width: 100%;
-  }
-
-  #header {
-    width: 100%;
-  }
+  
 
   nav {
     width: 100%!important;
@@ -471,12 +471,13 @@
   .section-title {
     width: 100%;
   }
-  #portfolios {
+  #portfolio {
     width: 100%;
   }
   .portfolios {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .main-header .hero-title h1{
@@ -509,6 +510,40 @@
   .portfolios .project-02 .portfolio-desc{
     width: 100%;
     padding-left: 40px;
+  }
+
+  #about {
+    width: 100%;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .about-me .about-01 {
+    width: 100%;
+  }
+  .about-me .about-01 .about-img{
+    width: 100%;
+  }
+
+  .about-desc {
+    padding: 20px;
+  }
+  #contact {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .inner-contact {
+    width: 100%;
+  }
+  .contact-email {
+    width: 100%!important;
+  }
+  .main-contact {
+    width: 100%;
   }
 }
 
@@ -545,13 +580,47 @@
   }
 
   nav .menu-btn {
-      display: inline-block;
+      display: flex;
+      margin-right: 25px;
   }
   
   
   .mobile-menu {
       display: flex;
   }
+
+  #about .section-title {
+    top: 5%!important;
+    left: 34%!important;
+}
+
+#contact {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.inner-contact {
+  width: 100%;
+}
+
+.contact-email {
+  width: 100%!important;
+}
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.main-contact .left-contact {
+  margin-left: -34px!important;
+}
+
+.socials {
+  margin-left: 97px!important;
+}
+
+
   
 }
 
@@ -584,34 +653,27 @@
   
 }
 
-@media screen and (max-width: 1316px) {
-  #header {
-    width: 100%;
-  }
-
-  #portfolio {
-    width: 100%;
-  }
-
+@media screen and (max-width: 1317px) {
+ 
 }
 
 @media screen and (max-width: 1270px) {
 
   .main-header nav {
-    width: 90%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1140px) {
 
   .main-header nav {
-    width: 80%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 1008px) {
 
   .main-header nav {
-    width: 75%;
+    width: 100%;
   }
 }
