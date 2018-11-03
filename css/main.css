@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: loadFade .5s ease-out;
   }
 
   body {
@@ -95,6 +96,7 @@
     position: absolute;
     top: 37%;
     left: 17%;
+    
   }
 
   .main-header .hero-title h1 {
@@ -102,6 +104,14 @@
     font-size: 45px;
     margin-bottom: 20px;
     letter-spacing: 3px;
+    animation: moveToBottom .5s ease-out;
+    backface-visibility: hidden;
+  }
+
+  .main-header .hero-title p {
+    animation: moveToBottom .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
   }
 
    /* ------------- Mobile Button --------------- */
@@ -176,6 +186,8 @@
     top: 41%;
     left: 13%;
     width: 200px;
+    animation: loadFade .5s ease-out 1.8s;
+    animation-fill-mode: backwards;
   }
   
   #portfolio .portfolio-title h2{
@@ -196,11 +208,15 @@
   .project-01 {
     width: 460px;
     height: 100%; 
+    animation: moveToBottom .5s ease-out 1.2s;
+    animation-fill-mode: backwards;
   }
 
   .project-02 {
     width: 460px;
     height: 100%; 
+    animation: moveToBottom .5s ease-out 1.2s;
+    animation-fill-mode: backwards;
   }
  .portfolio-img {
     overflow: hidden;
@@ -291,6 +307,8 @@
   top: 46%;
   left: 14%;
   width: 200px;
+  animation: loadFade .5s ease-out 1.8s;
+    animation-fill-mode: backwards;
 }
 
 
@@ -304,10 +322,14 @@
 .about-01 {
   flex: 0 0 460px;
   height: 500px;
+  animation: moveInLeft .5s ease-out 1.2s;
+  animation-fill-mode: backwards;
 }
 
 .about-desc {
   flex: 0 0 400px;
+  animation: moveInRight .5s ease-out 1.2s;
+  animation-fill-mode: backwards;
 }
 .about-desc h2 {
   text-transform: uppercase;
@@ -376,9 +398,9 @@
   margin-top: -1px;
   width: 100%;
 }
-
-#contact .inner-contact {
-
+.inner-contact {
+  animation: loadFade .5s ease-out 1.2s;
+  animation-fill-mode: backwards;
 }
 
 #contact .inner-contact .contact-email{
@@ -450,6 +472,63 @@
   color: #fff;
 }
 
+/* ------------------------- ANIMATION -------------------------------- */
+
+@keyframes moveToBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+
+
+
+@keyframes loadFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------- Media Queries ---------------------- */
 
@@ -516,6 +595,9 @@
     width: 100%;
   }
 
+  .about-title {
+    top: 5%!important;
+  }
   .about-me {
     display: flex;
     flex-direction: column;
@@ -609,7 +691,6 @@
 .main-contact {
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
 }
 
 .main-contact .left-contact {
@@ -617,7 +698,7 @@
 }
 
 .socials {
-  margin-left: 97px!important;
+  margin-left: 92px!important;
 }
 
 
@@ -631,7 +712,7 @@
     left: 6%;
   }
   #about .section-title {
-    left: 8%;
+    left: 6%;
   }
 }
 
@@ -673,3 +754,4 @@
     width: 100%;
   }
 }
+
