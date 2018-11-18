@@ -224,7 +224,7 @@
     height: 320px; 
   } 
   .portfolios .portfolio-img .portfolio-01 {
-    background: url(../img/shevi.PNG) center/cover no-repeat;
+    background: url(../img/shevi.jpg) center/cover no-repeat;
     transition: all .5s ease-in-out;
     width: 100%;
     height: 100%; 
@@ -236,7 +236,7 @@
   }
 
   .portfolios .portfolio-img .portfolio-02 {
-    background: url(../img/lucien2.PNG) center/cover no-repeat;
+    background: url(../img/lucien2.jpg) center/cover no-repeat;
     transition: all .5s ease-in-out;
     width: 100%;
     height: 100%;
@@ -299,6 +299,7 @@
   padding-top: 120px; 
   position: relative;
   width: 100%;
+  padding-bottom: 122px;
 }
 #about .about-title {
   -webkit-transform: rotate(-90deg);
@@ -630,6 +631,9 @@
 }
 
 @media only screen and (max-width: 767px) {
+  p {
+    font-size: 14px!important;
+  }
   .container {
     width: 100%;
   }
@@ -671,9 +675,14 @@
       display: flex;
   }
 
+  #about {
+    padding-bottom: 12px;
+  }
+
   #about .section-title {
     top: 5%!important;
     left: 34%!important;
+    padding-bottom: 146px;
 }
 
 #contact {
