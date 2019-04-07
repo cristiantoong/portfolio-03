@@ -387,7 +387,7 @@
   left: 14%;
   width: 200px;
   animation: loadFade .5s ease-out 1.8s;
-    animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 
@@ -644,9 +644,19 @@
   .main-header .hero-title p{
     font-size: 16px;
   }
+
+  .portfolio-title {
+    text-align: center;
+  }
+
+  .portfolio-title h2 {
+    margin-top: -40px;
+  }
+
   #portfolio .section-title {
     top: 4%!important;
     left: 37%!important;
+    padding-top: 20px;
   }
   .portfolios .project-01{
     width: 100%;
@@ -670,6 +680,14 @@
     width: 100%;
   }
 
+  .portfolios .project-04{
+    width: 100%;
+    padding-top: 53px;
+  }
+  .portfolios .project-04 .portfolio-img{
+    width: 100%;
+  }
+
   .portfolios .project-01 .portfolio-desc{
     width: 100%;
     padding-left: 40px;
@@ -684,12 +702,18 @@
     padding-left: 40px;
   }
 
+  .portfolios .project-04 .portfolio-desc{
+    width: 100%;
+    padding-left: 40px;
+  }
+
   #about {
     width: 100%;
   }
 
   .about-title {
     top: 5%!important;
+    left: 36%!important;
   }
   .about-me {
     display: flex;
@@ -747,7 +771,7 @@
   }
 
   #portfolio .section-title {
-    left: 28%!important;
+    left: 26%!important;
   }
 
   nav {
@@ -811,6 +835,7 @@
 @media screen and (max-width: 1620px) {
   #portfolio .section-title {
     left: 6%;
+    margin-top: -24px;
   }
   #about .section-title {
     left: 6%;
@@ -822,6 +847,7 @@
     -webkit-transform: rotate(0);
     top: 6%;
     left: 44%;
+
   }
   #about .section-title {
     -webkit-transform: rotate(0);
